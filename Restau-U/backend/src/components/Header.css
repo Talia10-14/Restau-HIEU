@@ -1,0 +1,64 @@
+.header {
+    background: linear-gradient(135deg, #f0f9ff, #ecfdf5);
+  margin: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-purple {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #9333ea; /* équivalent de text-purple-600 */
+}
+
+.logo-red {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ef4444; /* équivalent de text-red-500 */
+  margin-left: 0.25rem;
+}
+
+.tagline {
+  font-size: 0.875rem;
+  color: #6b7280; /* équivalent de text-gray-500 */
+  margin-left: 0.5rem;
+}
+
+.menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu a {
+    color: #374151; /* text-gray-700 */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .menu a:hover {
+    color: #9333ea; /* hover:text-purple-600 */
+  }
+}
+    @media (max-width: 768px) {
+  .menu {
+font-size: 10px;    
+}
+  }

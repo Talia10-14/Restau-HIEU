@@ -1,0 +1,339 @@
+.hero-section {
+  background: linear-gradient(135deg, #f0f9ff, #ecfdf5);
+  padding: 3rem 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hero-text {
+  width: 45%;
+  z-index: 10;
+}
+
+/* Feuilles de menthe dispersées - comme sur la photo */
+.mint-leaf-1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 15%;
+  right: 8%;
+  z-index: 1;
+  opacity: 0.8;
+  transform: rotate(25deg);
+}
+
+.mint-leaf-2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35%;
+  right: 15%;
+  z-index: 1;
+  opacity: 0.7;
+  transform: rotate(-15deg);
+}
+
+.mint-leaf-3 {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  bottom: 25%;
+  left: 5%;
+  z-index: 1;
+  opacity: 0.6;
+  transform: rotate(45deg);
+}
+
+.mint-leaf-4 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 60%;
+  left: 12%;
+  z-index: 1;
+  opacity: 0.8;
+  transform: rotate(-30deg);
+}
+
+.mint-leaf-5 {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  bottom: 15%;
+  right: 20%;
+  z-index: 1;
+  opacity: 0.7;
+  transform: rotate(60deg);
+}
+
+.hero-title-wrapper {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero-title-main {
+  font-size: 7rem;
+  font-weight: 400;
+  color: #8b5cf6;
+  font-family: 'Great Vibes', cursive;
+  margin: 0;
+  line-height: 0.8;
+  margin-left: -20px;
+}
+
+.hero-title-sub {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
+  position: absolute;
+  bottom: 1px;
+  right: 215px;
+  letter-spacing: 2px;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-description {
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  max-width: 400px;
+}
+
+.hero-btn {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+}
+
+.hero-btn:hover {
+  background: linear-gradient(135deg, #b91c1c, #991b1b);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+}
+
+.hero-image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-bg {
+  position: absolute;
+  width: 24rem;
+  height: 24rem;
+  border: 24px solid hsla(228, 92%, 33%, 0.633);
+  border-radius: 50%;
+  clip-path: inset(0 0 0 50%);
+  z-index: 5;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 10;
+  border-radius: 50%;
+  width: 24rem;
+  height: 24rem;
+  object-fit: cover;
+}
+.hero-bottom {
+  text-align: center;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 10;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-bottom-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.hero-bottom-btn {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: Arial, sans-serif;
+  outline: none;
+  min-width: 280px;
+}
+
+.hero-bottom-btn:hover {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+}
+
+.hero-bottom-btn:active {
+  transform: translateY(0px);
+  box-shadow: 0 2px 10px rgba(139, 92, 246, 0.5);
+}
+
+.fire-icon {
+  font-size: 1.1rem;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+.btn-text {
+  flex: 1;
+  text-align: center;
+}
+
+.dropdown-arrow {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.hero-bottom-btn:hover .dropdown-arrow {
+  transform: translateY(1px);
+}
+/* Animation flottante pour les feuilles */
+.mint-leaf-1,
+.mint-leaf-2,
+.mint-leaf-3,
+.mint-leaf-4,
+.mint-leaf-5 {
+  animation: float 3s ease-in-out infinite;
+}
+
+.mint-leaf-2 {
+  animation-delay: 0.5s;
+}
+
+.mint-leaf-3 {
+  animation-delay: 1s;
+}
+
+.mint-leaf-4 {
+  animation-delay: 1.5s;
+}
+
+.mint-leaf-5 {
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(var(--rotation, 0deg));
+  }
+  50% {
+    transform: translateY(-10px) rotate(var(--rotation, 0deg));
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-container {
+    padding: 0 2rem;
+  }
+  
+  .hero-title-main {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-text,
+  .hero-image-wrapper {
+    width: 100%;
+  }
+  
+  .hero-title-main {
+    font-size: 4rem;
+  }
+  
+  .hero-image {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .hero-image-bg {
+    width: 320px;
+    height: 320px;
+  }
+  
+  /* Ajustement des feuilles pour mobile */
+  .mint-leaf-1,
+  .mint-leaf-2,
+  .mint-leaf-3,
+  .mint-leaf-4,
+  .mint-leaf-5 {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-bottom {
+    margin-top: 2rem;
+  }
+  .hero-btn {
+    margin: 1rem ;
+    font-size: 0.9rem;
+  }
+  .hero-bottom-title {
+    font-size: 1.2rem;
+  }
+  
+  .hero-bottom-btn {
+    min-width: 200px;
+    padding: 12px 24px;
+    font-size: 0.85rem;
+  }
+  .hero-image-wrapper {
+    margin-top: 3rem;
+  }
+  .dropdown-arrow {
+    font-size: 0.65rem;
+  }
+}

@@ -1,0 +1,112 @@
+.newsletter-section {
+  padding: 5rem 0; /* py-20 */
+  background-color: #2613d7c1; /* bg-purple-600 */
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter-container {
+  margin: 0 auto;
+  padding: 0 1rem; /* px-4 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.newsletter-text-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+  margin: 0 20px;
+}
+.newsletter-text {
+  display: flex;
+  align-items: center;
+    gap: 1rem;
+}
+
+.newsletter-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.newsletter-subtitle {
+  color: #ddd6fe; /* text-purple-200 */
+  margin: 0;
+}
+
+.newsletter-form {
+  display: flex;
+  margin: 60px;
+}
+
+.newsletter-input {
+    flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.newsletter-button {
+  background-color: #ebe8e8; /* bg-red-500 */
+  color: #646262;
+  padding: 0.75rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-button:hover {
+  background-color: #dc2626; /* hover:bg-red-600 */
+}
+
+.newsletter-image-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.newsletter-image {
+  width: 16rem; /* w-64 */
+  height: 16rem; /* h-64 */
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width: 1024px) {
+  .newsletter-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .newsletter-text-content {
+    margin-bottom: 2rem;
+  }
+  .newsletter-image-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+  
+}
+@media (max-width: 768px) {
+  .newsletter-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .newsletter-text, 
+  .newsletter-image-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+  .newsletter-form {
+    flex-direction: column;
+  }
+  .newsletter-input {
+    border-radius: 9999px;
+    margin-bottom: 1rem;
+  }
+  .newsletter-button {
+    border-radius: 9999px;
+  }
+}

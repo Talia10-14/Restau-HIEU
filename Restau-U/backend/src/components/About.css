@@ -1,0 +1,79 @@
+.about-section {
+  padding: 5rem 0;
+  background-color: #ffffff; /* bg-white */
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.about-image-wrapper {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image-bg {
+  position: absolute;
+  width: 24rem;
+  height: 24rem;
+  border: 24px solid #f2db0e81; /* Couleur de l'arc */
+  border-radius: 50%;
+  clip-path: inset(0 0 0 50%); /* On garde juste la moitié supérieure */
+  z-index: 5; /* Derrière l'image */
+}
+
+.about-image {
+  position: relative;
+  z-index: 10;
+  border-radius: 50%;
+  width: 24rem; /* w-96 */
+  height: 24rem; /* h-96 */
+  object-fit: cover;
+  box-shadow: -20px 0 30px rgba(0, 0, 0, 0.3);
+
+}
+
+.about-content {
+  width: 50%;
+  padding-left: 4rem; /* pl-16 */
+}
+
+.about-subtitle {
+  color: #4b5563; /* text-gray-600 */
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.about-title {
+  font-size: 3rem; /* text-5xl */
+  font-weight: bold;
+  color: #695fbf; /* text-purple-600 */
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  color: #4b5563; /* text-gray-600 */
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+}
+
+.about-btn {
+  background-color: #ef4444; /* bg-red-500 */
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.about-btn:hover {
+  background-color: #dc2626; /* bg-red-600 */
+}
