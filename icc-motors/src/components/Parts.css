@@ -1,0 +1,120 @@
+.car-parts-container {
+  text-align: center;
+  background-color: #52112b;
+  color: white;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.car-parts-container h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.car-parts-container p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+.car-parts-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto; 
+  max-width: 800px; 
+  gap: 1rem; 
+}
+
+.car-image {
+  z-index: 1;
+  flex: 0 0 auto; 
+}
+
+.car-image img {
+  width: 300px;
+  height: auto;
+}
+
+.parts-list {
+  position: relative;
+  flex: 0 0 220px; 
+  height: 300px; 
+}
+
+.parts-list.left,
+.parts-list.right {
+  flex: 0 0 220px; 
+}
+
+.part {
+  position: absolute;
+  background-color: #e0e0e0;
+  color: black;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  width: 190px; 
+  height: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.part:hover {
+  transform: scale(1.05);
+}
+
+.left .part:nth-child(1) { top: 0; left: 0; }
+.left .part:nth-child(2) { top: 70px; left: -40px; } 
+.left .part:nth-child(3) { top: 140px; left: -40px; }
+.left .part:nth-child(4) { top: 210px; left: 0px; }
+
+.right .part:nth-child(1) { top: 0; right: 0; }
+.right .part:nth-child(2) { top: 70px; right: -40px; } 
+.right .part:nth-child(3) { top: 140px; right: -40px; }
+.right .part:nth-child(4) { top: 210px; right: 0px; }
+
+.icon {
+  font-size: 1.5rem;
+  color: #52112b;
+}
+
+.part:hover .icon {
+  color: gold;
+}
+
+@media (max-width: 768px) {
+  .car-parts-content {
+    flex-direction: column;
+    margin: 1rem;
+    gap: 2rem;
+  }
+  
+  .parts-list {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+  }
+  
+  .part {
+    position: static;
+    width: 150px;
+  }
+  
+  .left .part:nth-child(n),
+  .right .part:nth-child(n) {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+}
